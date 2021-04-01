@@ -1,0 +1,36 @@
+<h2 style="text-align:center;">USER DETAILS</h2>
+    <div>
+
+        <table id="customers">
+             <thead>
+    <tr>
+        <th>Consumer Name</th>
+        <th>Consumer Phone Number</th>
+        <th>Consumer Address</th>
+        <th>Consumer CardType</th>
+        <th>IFSC Code</th>
+        <th>Consumer Bank</th>
+        <th>Consumer Account Number</th>
+        <th>Active User</th>
+        <th>Delete</th>
+        <th>Activate</th>
+
+    </tr>
+</thead>
+<tbody>
+      <tr *ngFor="let e of employeeslist">
+      
+        <td> {{e.consumerName}} </td>
+        <td> {{e.consumerPhone}} </td>
+         <td> {{e.consumerAddress}} </td>
+           <td> {{e.consumerCardtype}} </td>
+        <td> {{e.consumerIFSC}} </td>
+        <td> {{e.consumerBankName}} </td>
+        <td>{{e.consumerAccountNumber}} </td>
+          <td>{{e.activeUser}} </td>
+        <td><input class='myclass' type='button' value='Delete' class="btn btn-danger" (click)="delete(e.consumerId)" /></td>
+        <td><input class='myclass' type='button'  value='Activate' class="btn btn-success" (click)="activate(e.consumerId)" /></td>
+    </tr>
+</tbody>
+        </table>
+    </div>

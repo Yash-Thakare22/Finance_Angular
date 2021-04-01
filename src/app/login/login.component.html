@@ -1,0 +1,83 @@
+
+    <!-- <div class="container">
+        <div class="jumbotron">
+            <div class="display-4">
+                Login
+            </div>
+            <form [formGroup]="loginForm" (ngSubmit)="Login()">
+                <div class="form-group">
+                    <label for="consumerUsername">
+                        Enter Username
+                    </label>
+                    <input type="text" class="form-control" formControlName="consumerUsername" required>
+    
+                    <div class="alert alert-danger" *ngIf="consumerUsername.errors && consumerUsername.touched">
+                        <small *ngIf="consumerUsername.errors.required">
+                            Username is required
+                        </small>
+                        <small *ngIf="consumerUsername.errors.minlength">
+                            Username should be atleast of length 5
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="consumerPassword">Enter Password</label>
+                    <input type="consumerPassword" class="form-control" formControlName="consumerPassword">
+    
+                    <div class="alert alert-danger" *ngIf="consumerPassword.errors && consumerPassword.touched">
+                        <small *ngIf="consumerPassword.errors.required">
+                            Password required
+                        </small>
+                        <small *ngIf="consumerPassword.errors.minlength">
+                            Password should be of length greater than 8
+                        </small>
+                    </div>
+                </div>
+    
+                <div class="text-center">
+                    
+                    <button type="submit" class="btn btn-success" (click)="btnClick()">Forgot Password</button>&nbsp;&nbsp;
+                    
+                </div><br>
+    
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Login</button>&nbsp;&nbsp;
+                    
+                    <button type="reset" class="btn btn-success">Reset</button>
+                </div>
+    
+                <div class="text-danger">{{errorMessage}}</div>
+            </form>
+        </div>
+    </div> -->
+
+<h3>Login</h3>
+<div  style= "align-content:center;" >
+
+    <div [hidden]="submitted" style="width: 400px;">
+   
+      <form action="">
+
+        
+  <div class="form-group">
+    <label for="name">consumerUsername</label>
+    <input type="text" class="form-control" id="user" required [(ngModel)]="login.consumerUsername" name="user">
+</div>
+
+<div class="form-group">
+    <label for="name">Password</label>
+    <input type="password" class="form-control" id="pass" required [(ngModel)]="login.consumerPassword" name="pass">
+</div>
+        
+        <button type="submit" class="btn btn-success" (click)="gotoDashboard()" >Login</button>
+
+<button type="submit" class="btn btn-success" (click)=" gotoAdmin()">Login as Admin</button>
+<a (click)=" gotoPass()">Forgot password?</a>
+</form>
+</div>
+
+
+</div>
+
+
+

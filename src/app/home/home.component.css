@@ -1,0 +1,336 @@
+.section-heading
+{
+  text-align: center;
+}
+
+.hello h1{
+  margin-left: 210px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:#062F3c;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #606060;
+  position: relative;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+h1,h2,h3 { font-weight: 300; }
+p { line-height: 28px; }
+hr {
+  border-color: #f2f2f2;
+  width: 100px;
+  margin-bottom: 40px;
+}
+.title {
+  color: #062F3c;
+  font-family: 'Texturina', serif;
+  font-size: 40px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* START NAVIGATION */
+.sticky-navigation { opacity: 20; }
+.navbar-default {
+  background: #fff;
+  border: none;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+          box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
+  margin: 0;
+  padding: 0;
+}
+.navbar-default .navbar-brand {
+  color: #212227;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  padding: 10px 0 0 12px;
+}
+.navbar-default  {
+  color: #202020;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 45px;
+  letter-spacing: 1px;
+}
+.navbar-default { color: #008080; }
+.navbar-default
+.navbar-default  {
+  color: #008b8b;
+  background-color:  #008b8b;
+}
+/* .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #008b8b;
+  background-color:  #008b8b;
+} */
+.navbar-default {
+  border: none;
+  padding-top: 10px;
+}
+.navbar-default {
+  background: #008b8b;
+  border-color:  #008b8b;
+}
+.navbar-default:hover, .navbar-default:focus { background-color: #008b8b }
+/* END NAVIGATION */
+
+/* START HOME */
+.templatemo-home {
+  /* background: url('../images/home-bg.jpg'); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  color: #5f5f5f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;  
+  height: 100vh;
+}
+.tm-home-title,
+ .tm-home-subtitle {
+  text-transform: uppercase;
+ }
+.tm-home-title { font-size: 60px; }
+.tm-home-subtitle {
+  color: #008080;
+  font-weight: bold;
+  padding-bottom: 40px;
+  letter-spacing: 2px;
+}
+.tm-view-more-btn {
+  background: #062F3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 15px 50px;
+  -webkit-transition: all 0.6s ease-in;
+          transition: all 0.6s ease-in;
+}
+.tm-view-more-btn:hover {
+  background: #ffffff;
+  color: #008080;
+}
+/* END HOME */
+
+/* START WORK */
+.tm-padding-top-bottom-100 {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+/* END WORK */
+
+/* START PRODUCTS */
+
+a.filled-button {
+	background-color: #062F3c;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+  font-weight: 700;
+	padding: 12px 30px;
+  border-radius: 30px;
+	display: inline-block;
+	transition: all 0.3s;
+}
+
+
+a.filled-button:hover {
+	background-color: #fff;
+	color: #062F3c;
+}
+
+.products {
+	margin-top: 10px;
+}
+
+.product-item img {
+	width: 70%;
+	overflow: hidden;
+}
+
+.product-item .down-content {
+	background-color: #ffffff;
+	padding: 30px;
+}
+
+.product-item .down-content h4 {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.25px;
+	margin-bottom: 15px;
+}
+
+.product-item .down-content p {
+	margin-bottom: 20px;
+}
+
+/* END PRODUCTS*/
+
+/* START PORTFOLIO */
+.tm-portfolio {
+  background: #f8f8f8;
+  padding-top: 80px;
+}
+.tm-portfolio .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.tm-portfolio .col-md-3,
+ .tm-portfolio .col-sm-3 {
+  padding: 0;
+  margin: 0;
+}
+.tm-portfolio-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.portfolio-item-title {
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* END PORTFOLIO */
+
+/* START RESUME */
+.tm-red-text { color: #008080; }
+.tm-info-label {
+  font-weight: bold;
+  display: inline-block;
+  width: 90px;
+}
+.tm-progress {
+  background: #fff;
+  border-radius: 2px;
+  height: 4px;
+}
+.progress-bar-danger { background: #008080; }
+.tm-progress-label {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+.progress-percent-small {
+  display: block;
+  float: right;
+  padding-right: 80px;
+}
+/* END RESUME */
+
+/* START ABOUT */
+.tm-about {
+  /* background: url('../images/about-bg.jpg'); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+/* END ABOUT */
+
+
+
+/* Testimonials Style */
+
+
+.about-testimonials {
+	margin-top: 0px!important;
+}
+
+.testimonials {
+  text-align: center;
+	margin-top: 140px;
+	background-color: #f7f7f7;
+	padding: 140px 0px;
+}
+.testimonial-item .inner-content {
+	text-align: center;
+	background-color: #fff;	
+	padding: 30px;
+	border-radius: 5px;
+}
+.testimonial-item p {
+	font-size: 14px;
+	font-weight: 400;
+}
+.testimonial-item h4 {
+	font-size: 19px;
+	font-weight: 700;
+	color: #1e1e1e;
+	letter-spacing: 0.5px;
+	margin-bottom: 0px;
+}
+.testimonial-item span {
+	display: inline-block;
+	margin-top: 8px;
+	font-weight: 600;
+	font-size: 14px;
+	color: #008080;
+}
+
+/* START CONTACT */
+.tm-contact {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.form-control {
+  background: transparent;
+  border: 1px solid #666;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.6s ease-in;
+          transition: all 0.6s ease-in;
+}
+.form-control:focus,
+ .form-control:hover {
+  background: #062F3c;
+  color: #ffffff;
+}
+input { height: 50px; }
+.tm-contact p { padding-top: 40px; }
+/* END CONTACT */
+
+@media screen and (max-device-width: 1024px){
+  .templatemo-home {
+    background-attachment: scroll;
+  }
+}
+
+/* START MEDIA 980 */
+@media screen and (max-width:980px){
+  .portfolio-overlay  { padding-top: 10px; }
+}
+/* END MEDIA 980 */
+
+@media screen and (max-width: 767px) {
+  .tm-home-title { font-size: 40px; }
+}
+
+/* START MEDIA 360 */
+@media screen and (max-width:360px){
+  .navbar-default .navbar-brand {  padding-top: 2px; }
+}
+/* END MEDIA 360 */

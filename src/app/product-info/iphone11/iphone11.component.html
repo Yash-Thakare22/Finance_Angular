@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorial</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!--CSS-->
+    <meta name="robots" content="noindex,follow" />
+
+  </head>
+
+  <body>
+    <main class="container">
+
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <img data-image="gold" src="assets/images/gold.jpg" alt="">
+        <img data-image="green" src="assets/images/green.jpg" alt="">
+        <img data-image="gray" class="active" src="assets/images/grey.jpg" alt="">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>IPhone 11</span>
+          <h1>Apple iPhone 11 Pro Max ₹10,99,000</h1>
+          <p>Shoot amazing videos and photos with the Ultra Wide, Wide, and Telephoto cameras. Capture your best low-light photos with Night mode.</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+          <div class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="gold" type="radio" id="gold" name="color" value="gold" checked>
+                <label for="gold"><span></span></label>
+              </div>
+              <div>
+                <input data-image="green" type="radio" id="green" name="color" value="green">
+                <label for="green"><span></span></label>
+              </div>
+              <div>
+                <input data-image="gray" type="radio" id="gray" name="color" value="gray">
+                <label for="gray"><span></span></label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+            <span>Emi Option</span>
+
+            <div class="cable-choose">
+              <button onclick="my17()">3</button>
+              <button onclick="my18()">6</button>
+              <button onclick="my19()">9</button>
+              <button onclick="my20()">12</button>
+            
+            
+            </div>
+            <a href="#">Processing Fee : ₹150</a>
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+            <span>Emi Per Month</span>
+          <span id="demo"> </span>
+          <button class="cart-btn" (click)="gotoPay()">Pay</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

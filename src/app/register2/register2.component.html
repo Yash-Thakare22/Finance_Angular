@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="jumbotron">
+        <div class="display-4">
+            Register
+        </div>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="email">
+                    Enter Email
+                </label>
+                <input type="text" class="form-control" formControlName="email" required [(ngModel)]="login.consumerUsername">
+            </div>
+            <div class="form-group">
+                <label for="password">
+                    Enter Password
+                </label>
+                <input type="password" class="form-control" formControlName="password" required [(ngModel)]="login.consumerPassword">
+            </div>
+            <div class="form-group">
+                <label for="password">
+                    Confirm Password
+                </label>
+                <input type="password" class="form-control" formControlName="password" required>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Register</button>&nbsp;&nbsp;
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- <h3>Create Employee</h3>
+<div style="align-content:center;">
+  <div [hidden]="submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+
+
+      <div class="form-group">
+        <label for="name">Email</label>
+        <input type="text" class="form-control" id="user" required [(ngModel)]="login.consumerUsername" name="user">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Password</label>
+        <input type="password" class="form-control" id="pass" required [(ngModel)]="login.consumerPassword" name="pass">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Confirm Password</label>
+        <input type="password" class="form-control" id="cpass" required name="cpass">
+      </div>
+
+      <button type="submit" class="btn btn-success" >Register</button>
+    </form>
+  </div>
+
+  <div [hidden]="!submitted">
+    <h5>You submitted successfully!</h5>
+  </div>
+</div> -->

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="jumbotron">
+        <div class="display-4">
+            Login
+            </div>
+<div  style= "align-content:center;" >
+
+    <div [hidden]="submitted" style="width: 400px;">
+    <form action="" (ngSubmit)="onSubmit()">
+            <!-- <div class="right-column">
+                    <img src="assets/images/login_man.png">
+            </div> -->
+            <!-- <div class="left-column"> -->
+  <div class="form-group">
+    <label for="name">Email</label>
+    <input type="text" class="form-control" id="user" required [(ngModel)]="login.consumerUsername" name="user">
+</div>
+
+<div class="form-group">
+    <label for="name">Password</label>
+    <input type="password" class="form-control" id="pass" required [(ngModel)]="login.consumerPassword" name="pass">
+</div>
+
+        <div class="text-center">
+        <button type="submit" class="btn btn-success" >Login</button>&nbsp;&nbsp;
+
+        <button type="submit" class="btn btn-success" (click)=" gotoAdmin()">Login as Admin</button>&nbsp;&nbsp;
+
+    </div><br>
+        
+    <div class="text-center">
+        <button type="submit"id="register"  class="btn btn-primary" (click)="gotoRegister()" >New User? Register here</button>&nbsp;&nbsp;
+<br>
+<hr>
+        <button type="submit" id="Admin" class="btn btn-light" (click)=" gotoPass()">Forgot password?Click here </button>&nbsp;&nbsp;
+    </div><br>
+</form>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+

@@ -1,0 +1,49 @@
+<div class="container">
+        <table class="table table-striped">
+          <thead>
+              <tr>
+                <th>Transaction Date</th>
+                <th>Transaction Amount</th>
+                <th>Card Number</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let t of transList">
+              <td>{{ t.transactionDate }}</td>
+              <td>{{ t.transactionAmount }}</td>
+              <td>{{ t.cardNumber }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+<!-- <div class="container">
+    <div class="jumbotron">
+        <div class="display-4">
+            Register
+        </div>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="date">
+                    Enter Transaction date
+                </label>
+                <input type="text" class="form-control" formControlName="transactionDate" required [(ngModel)]="transaction.transactionDate">
+            </div>
+            <div class="form-group">
+                <label for="amount">
+                    Enter Transaction Amount
+                </label>
+                <input type="text" class="form-control" formControlName="transactionAmount" required [(ngModel)]="transaction.transactionAmount">
+            </div>
+            <div class="form-group">
+                <label for="address">
+                    Enter Card  Number
+                </label>
+                <input type="text" class="form-control" formControlName="cardNumber" required [(ngModel)]="transaction.cardNumber">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Next</button>&nbsp;&nbsp;
+            </div>
+        </form>
+    </div>
+</div> -->

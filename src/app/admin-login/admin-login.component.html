@@ -1,0 +1,51 @@
+<div class="container">
+        <div class="jumbotron">
+            <div class="display-4">
+                Login
+            </div>
+            <form [formGroup]="loginForm" (ngSubmit)="Login()">
+                <div class="form-group">
+                    <label for="username">
+                        Enter Username
+                    </label>
+                    <input type="text" class="form-control" formControlName="username" required>
+    
+                    <div class="alert alert-danger" *ngIf="username.errors && username.touched">
+                        <small *ngIf="username.errors.required">
+                            Username is required
+                        </small>
+                        <small *ngIf="username.errors.minlength">
+                            Username should be atleast of length 5
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Enter Password</label>
+                    <input type="password" class="form-control" formControlName="password">
+    
+                    <div class="alert alert-danger" *ngIf="password.errors && password.touched">
+                        <small *ngIf="password.errors.required">
+                            Password required
+                        </small>
+                        <small *ngIf="password.errors.minlength">
+                            Password should be of length greater than 8
+                        </small>
+                    </div>
+                </div>
+    
+                <div class="text-center">
+                    
+                    <button type="submit" class="btn btn-success">Forgot Password</button>&nbsp;&nbsp;
+                    
+                </div><br>
+    
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Login</button>&nbsp;&nbsp;
+                    
+                    <button type="reset" class="btn btn-success">Reset</button>
+                </div>
+    
+                <div class="text-danger">{{errorMessage}}</div>
+            </form>
+        </div>
+    </div>

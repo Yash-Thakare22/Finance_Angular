@@ -1,0 +1,158 @@
+<div class="container">
+    <div class="jumbotron">
+        <div class="display-4">
+            Register
+        </div>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="fullName">
+                    Enter Full Name
+                </label>
+                <input type="text" class="form-control" formControlName="fullName" required [(ngModel)]="consumer.consumerName">
+            </div>
+            <div class="form-group">
+                <label for="phone">
+                    Enter Phone Number
+                </label>
+                <input type="text" class="form-control" formControlName="phone" required [(ngModel)]="consumer.consumerPhone">
+            </div>
+            <div class="form-group">
+                <label for="address">
+                    Enter Address
+                </label>
+                <input type="text" class="form-control" formControlName="address" required [(ngModel)]="consumer.consumerAddress">
+            </div>
+            <div class="form-group">
+                <label for="emailId">
+                    Enter Email Address
+                </label>
+                <input type="text" class="form-control" formControlName="emailId" required [(ngModel)]="consumer.consumerEmail">
+            </div>
+            <div class="form-group">
+                <label for="Salary">
+                    Enter Salary 
+                </label>
+                <input type="text" class="form-control" formControlName="salary" required [(ngModel)]="consumer.consumerSalary">
+            </div>
+            <div class="form-group">
+                <label for="fullName">
+                    Enter Card Type 
+                </label>
+                <input type="text" class="form-control" formControlName="card" required [(ngModel)]="consumer.consumerCardtype">
+            </div>
+            <div class="form-group">
+                <label for="fullName">
+                    Enter Bank Name 
+                </label>
+                <input type="text" class="form-control" formControlName="bank" required [(ngModel)]="consumer.consumerBankName">
+            </div>
+            <div class="form-group">
+                <label for="fullName">
+                    Enter Account Number  
+                </label>
+                <input type="text" class="form-control" formControlName="bank" required [(ngModel)]="consumer.consumerAccountNumber">
+            </div>
+            <div class="form-group">
+                <label for="fullName">
+                    Enter IFSC Code 
+                </label>
+                <input type="text" class="form-control" formControlName="bank" required [(ngModel)]="consumer.consumerIFSC">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Next</button>&nbsp;&nbsp;
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- <h3>Create Employee</h3>
+<div style="align-content:center;">
+  <div [hidden]="submitted" style="width: 400px;">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" id="fullName" formControlName="fullName" required [(ngModel)]="consumer.consumerName"
+          name="fullName" [ngClass]="{'is-invalid': submitted && registerForm.controls.fullName.errors }">
+          <div *ngIf="submitted &amp;&amp; registerForm.controls.firstName.errors" class="text-danger">
+              <div *ngIf="registerForm.controls.fullName.errors.required">First Name is required</div>
+              </div>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Phone Number</label>
+        <input type="text" class="form-control" id="phone" formControlName="phone" required [(ngModel)]="consumer.consumerPhone" name="phone" [ngClass]="{ 'is-invalid': submitted && registerForm.controls.phone.errors }">
+        <div *ngIf="submitted &amp;&amp; registerForm.controls.phone.errors" class="text-danger">
+            <div *ngIf="registerForm.controls.phone.errors.required">Phone Number is required</div>
+            </div>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Address</label>
+        <input type="text" class="form-control" id="address"  formControlName="address" required [(ngModel)]="consumer.consumerAddress"
+          name="address" [ngClass]="{ 'is-invalid': submitted && registerForm.controls.address.errors }">
+          <div *ngIf="submitted &amp;&amp; registerForm.controls.address.errors" class="text-danger">
+              <div *ngIf="registerForm.controls.address.errors.required">Address is required</div>
+              </div>
+      </div>
+
+      <div class="form-group">
+        <label for="name">emailId</label>
+        <input type="text" class="form-control" id="emailId" formControlName="emailId" required [(ngModel)]="consumer.consumerEmail"
+          name="emailId" [ngClass]="{ 'is-invalid': submitted && registerForm.controls.emailId.errors }">
+          <div *ngIf="submitted &amp;&amp; registerForm.controls.emailId.errors" class="text-danger">
+              <div *ngIf="registerForm.controls.emailId.errors.required">Email is required</div>
+              <div *ngIf="registerForm.controls.emailId.errors.email">Email must be a valid email address</div>
+              </div>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Salary</label>
+        <input type="text" class="form-control" id="salary" formControlName="salary" required [(ngModel)]="consumer.consumerSalary" [ngClass]="{ 'is-invalid': submitted && registerForm.controls.salary.errors }"
+          name="salary">
+          <div *ngIf="submitted &amp;&amp; registerForm.controls.salary.errors" class="text-danger">
+              <div *ngIf="registerForm.controls.salary.errors.required">Salary is required</div>
+              </div>
+      </div>
+
+      <div class="form-group">
+        <label>Card Type</label>
+        <input type="text" class="form-control" id="card" formControlName="card" required [(ngModel)]="consumer.consumerCardtype" name="card" [ngClass]="{ 'is-invalid': submitted && registerForm.controls.card.errors }">
+        <div *ngIf="submitted &amp;&amp; registerForm.controls.card.errors" class="text-danger">
+            <div *ngIf="registerForm.controls.card.errors.required">Card Type is required</div>
+            </div>
+        </div>
+
+      <div class="form-group">
+        <label>Bank Name</label>
+        <input type="text" class="form-control" id="bank" formControlName="bank" required [(ngModel)]="consumer.consumerBankName" name="bank" [ngClass]="{ 'is-invalid': submitted && registerForm.controls.bank.errors }">
+        <div *ngIf="submitted &amp;&amp; registerForm.controls.phone.errors" class="text-danger">
+            <div *ngIf="registerForm.controls.phone.errors.required">Address is required</div>
+            </div>  
+      </div>
+
+      <div class="form-group">
+        <label for="name">Account Number</label>
+        <input type="text" class="form-control" id="account" formControlName="account" required [(ngModel)]="consumer.consumerAccountNumber" [ngClass]="{ 'is-invalid': submitted && registerForm.controls.account.errors }"
+          name="account">
+          <div *ngIf="submitted &amp;&amp; registerForm.controls.account.errors" class="text-danger">
+              <div *ngIf="registerForm.controls.account.errors.required">Address is required</div>
+              </div>
+        </div>
+
+      <div class="form-group">
+        <label for="name">IFSC Code</label>
+        <input type="text" class="form-control" id="ifsc" formControlName="ifsc" required [(ngModel)]="consumer.consumerIFSC" name="ifsc" [ngClass]="{ 'is-invalid': submitted && registerForm.controls.ifsc.errors }">
+        <div *ngIf="submitted &amp;&amp; registerForm.controls.ifsc.errors" class="text-danger">
+            <div *ngIf="registerForm.controls.ifsc.errors.required">Address is required</div>
+            </div>
+      </div>
+      <button type="submit" class="btn btn-success">Next</button>
+    </form>
+  </div>
+
+  <div [hidden]="!submitted">
+    <h5>You submitted successfully!</h5>
+  </div>
+</div> -->
